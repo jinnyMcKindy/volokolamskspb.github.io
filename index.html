@@ -1,7 +1,56 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Progress</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="progress_wrapper">
+        <h1 class="progress_title">Progress</h1>
+        <div class="progress_content">
+            <div class="progress_content__bar">
+                <div id="progress-circle" class="ko-progress-circle" data-progress="0">
+                <div class="ko-circle">
+                    <div class="full ko-progress-circle__slice">
+                        <div class="ko-progress-circle__fill"></div>
+                    </div>
+                    <div class="ko-progress-circle__slice">
+                        <div class="ko-progress-circle__fill"></div>
+                        <div class="ko-progress-circle__fill ko-progress-circle__bar"></div>
+                    </div>
+                </div>
+                    <div class="ko-progress-circle__overlay"></div>
+                </div>
+            </div>
+            <div class="progress_content__api">
+
+                <div class="input-group first_group"><input id="number" type="text" class="progress-number" maxlength="3" onchange="text_change(this)" value="50"><label>Value</label></div>
+                <div class="errors error-hide">Введите число от 0 до 100</div>
+                <div class="input-group">
+                    <div class="checkbox-parent">                       
+                        <div class="checkbox-placeholder">
+                            <input name="animate" onclick="checkboc_click(this);" type="checkbox" class="animate checkbox"> 
+                            <div class="inner-placeholder"></div>                               
+                        </div>
+                    </div>
+                        <label>Animate</label>
+                </div>
+                <div class="input-group">
+                    <div class="checkbox-parent">
+                        <div class="checkbox-placeholder">
+                            <input name="hide" type="checkbox" onclick="checkboc_click(this);" class="hide checkbox"> 
+                            <div class="inner-placeholder"> 
+                            </div>      
+                        </div>
+                    </div>
+                    <label>Hide</label>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>   
 </body>
 </html>
