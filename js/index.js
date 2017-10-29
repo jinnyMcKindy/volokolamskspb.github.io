@@ -82,7 +82,7 @@ function text_change(element){
     progress_circle.setAttribute('data-progress', num); 
 }
 
-const node = document.getElementById("number");
+var node = document.getElementById("number");
 node.addEventListener('keydown', function(event) {
     if (event.key === "Enter") {
         text_change(node);
