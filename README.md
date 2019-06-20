@@ -1,3 +1,3 @@
-# volokolamskspb.github.io
+# Тестовое задание в Яндекс
 
 [Demo](https://volokolamskspb.github.io/)
